@@ -12,9 +12,7 @@ app.post('/test', async (req, res) => {
 
   try {
     const response = await axios.post(
-      "https://1ec6-2401-4900-ac94-5e0d-f1f1-e8d5-1b69-e491.ngrok-free.app/stop", {
-      sensor: req.body.sensor || 'fallback'
-    }, {
+      "https://23e5-2401-4900-8fca-f2fa-d05c-d057-18a9-bdba.ngrok-free.app/stop", {
       headers: {
         'ngrok-skip-browser-warning': 'true'
       }
@@ -35,5 +33,5 @@ app.get('/', (req, res) => {
 } );
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(🚀 Server running at http://localhost:${PORT});
 });
